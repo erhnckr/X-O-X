@@ -1,0 +1,45 @@
+import java.util.Scanner;
+public class JavaApplication1 {
+
+    
+    public static void main(String[] args) {
+        Scanner scan =new Scanner(System.in);
+       int dizi[][]= new int[3][3];
+       int a=1,b=2;
+       for(int i=0;i<9;i++)
+           if(i%2==0){
+               System.out.print("1. Oyuncu: ");
+                         System.out.print("x girin sonra y girin");
+                            int x =scan.nextInt();
+                          int y =scan.nextInt();
+                          dizi[x][y]=a; 
+                          for(int c=0;c<3;c++){
+            for(int d=0;d<3;d++){
+                System.out.print(dizi[c][d]);
+            }    
+            System.out.println();
+        }
+         }
+           else{
+                            System.out.print("2. Oyuncu: ");
+                 System.out.print("x girin sonra y girin");
+                                int x =scan.nextInt();
+                          int y =scan.nextInt();
+                          dizi[x][y]=b;
+  for(int c=0;c<3;c++){
+            for(int d=0;d<3;d++){
+                System.out.print(dizi[c][d]);
+            }    
+            System.out.println();
+        }
+
+           }
+       
+       }
+       
+        
+        
+        
+    }
+    
+}
